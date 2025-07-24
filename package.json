@@ -2,8 +2,8 @@
   "name": "generator-theia-extension",
   "version": "0.1.47",
   "engines": {
-    "node": ">=22",
-    "npm": ">=10"
+    "node": ">=18",
+    "npm": ">=9"
   },
   "description": "Helps to setup the project structure for developing extensions to the Theia IDE",
   "repository": {
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^5.2.7",
+    "@types/node": "~16.0.0",
     "@types/yeoman-generator": "^5.0.0",
     "mocha": "^6.2.0",
     "rimraf": "^5.0.0",
