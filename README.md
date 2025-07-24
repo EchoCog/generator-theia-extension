@@ -58,7 +58,51 @@ The generator allows to generate an example extension that is directly part of t
 | `backend` | Creates a backend communication extension | [readme](https://github.com/eclipse-theia/generator-theia-extension/blob/master/templates/backend/README.md) |
 | `no-extension` | Creates a Theia application without any extension | |
 
+## Quick Start Examples
 
+### Generate a Hello World Extension
+
+```bash
+mkdir my-hello-extension && cd my-hello-extension
+yo theia-extension --extensionType=hello-world --skip-install
+```
+
+### Generate a Widget Extension with Tests
+
+```bash
+mkdir my-widget-app && cd my-widget-app
+yo theia-extension "my-custom-widget" --extensionType=widget --author="Your Name" --description="My custom widget example"
+```
+
+### Generate a Backend Communication Extension
+
+```bash
+mkdir my-backend-app && cd my-backend-app
+yo theia-extension --extensionType=backend --browser --electron
+```
+
+### Generate a Standalone Extension
+
+```bash
+mkdir my-standalone-extension && cd my-standalone-extension
+yo theia-extension "my-extension" --extensionType=empty --standalone
+```
+
+### Command Line Options
+
+You can specify options directly to avoid prompts:
+
+```bash
+yo theia-extension "my-extension" \
+  --extensionType=widget \
+  --author="Your Name" \
+  --version="1.0.0" \
+  --description="My awesome extension" \
+  --license="MIT" \
+  --githubURL="https://github.com/yourname/my-extension" \
+  --theia-version="1.63.3" \
+  --skip-install
+```
 
 ## Publishing
 
